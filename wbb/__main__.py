@@ -115,8 +115,8 @@ async def help_command(_, message):
                         url=f"t.me/{BOT_USERNAME}?start=help",
                     ),
                     InlineKeyboardButton(
-                        text="Repo 🛠",
-                        url="https://github.com/thehamkercat/WilliamButcherBot",
+                        text="Owner 🦚",
+                        url="http://t.me/mrstrange_genuine",
                     ),
                 ],
                 [
@@ -125,7 +125,7 @@ async def help_command(_, message):
                         callback_data="stats_callback",
                     ),
                     InlineKeyboardButton(
-                        text="Support 👨", url="t.me/WBBSupport"
+                        text="Support 🇮🇳", url="t.me/menotdeveloper"
                     ),
                 ],
             ]
@@ -141,8 +141,8 @@ async def help_command(_, message):
                     text="Commands ❓", callback_data="bot_commands"
                 ),
                 InlineKeyboardButton(
-                    text="Repo 🛠",
-                    url="https://github.com/thehamkercat/WilliamButcherBot",
+                    text="Owner 🦚",
+                    url="https://t.me/mrstrange_genuine",
                 ),
             ],
             [
@@ -151,7 +151,7 @@ async def help_command(_, message):
                     callback_data="stats_callback",
                 ),
                 InlineKeyboardButton(
-                    text="Support 👨", url="t.me/WBBSupport"
+                    text="Support 🇮🇳", url="t.me/WBBSupport"
                 ),
             ],
             [
@@ -163,7 +163,7 @@ async def help_command(_, message):
         ]
     )
     await message.reply(
-        f"Hey there! My name is {BOT_NAME}. I can manage your group with lots of useful features, feel free to add me to your group.",
+        f"Hey there! My name is Haguromo Otsusuki. I'm here to create peace in shinobi world.",
         reply_markup=keyboard,
     )
 
@@ -174,8 +174,8 @@ async def help_parser(name, keyboard=None):
             paginate_modules(0, HELPABLE, "help")
         )
     return (
-        """Hello {first_name}! My name is {bot_name}!
-I'm a group management bot with some useful features.
+        """Hello {first_name}! My name is [Haguromo Otsusuki](https://telegra.ph/file/6b8d31e51f5d366431267.jpg)
+Aka sage of the six paths ,a group management bot with some useful features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 """.format(
@@ -216,8 +216,8 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""
-Hello {query.from_user.first_name}! My name is {BOT_NAME}!
-I'm a group management bot with some usefule features.
+Hello {query.from_user.first_name}! My name is [Haguromo Otsusuki](https://telegra.ph/file/6b8d31e51f5d366431267.jpg)
+And I'm here to create peace in shinobi world as well as your groups.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 
