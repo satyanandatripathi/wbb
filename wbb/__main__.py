@@ -151,7 +151,7 @@ async def help_command(_, message):
                     callback_data="stats_callback",
                 ),
                 InlineKeyboardButton(
-                    text="Support 🇮🇳", url="t.me/WBBSupport"
+                    text="Support 🇮🇳", url="t.me/menotdeveloper"
                 ),
             ],
             [
@@ -163,7 +163,7 @@ async def help_command(_, message):
         ]
     )
     await message.reply(
-        f"Hey there! My name is Haguromo Otsusuki. I'm here to create peace in shinobi world.",
+        f"Hey there! I am Field Marshal Sam Hormusji Framji Jamshedji Manekshaw. The real hero of 1971 ( tribute to real hero ).",
         reply_markup=keyboard,
     )
 
@@ -174,9 +174,10 @@ async def help_parser(name, keyboard=None):
             paginate_modules(0, HELPABLE, "help")
         )
     return (
-        """Hello {first_name}! My name is [Haguromo Otsusuki](https://telegra.ph/file/6b8d31e51f5d366431267.jpg)
-Aka sage of the six paths ,a group management bot with some useful features.
-You can choose an option below, by clicking a button.
+        """Hello {first_name}! I am ex. Field Marshal [Sam Manekshaw](https://telegra.ph/file/ef53480adecc59c459159.jpg)
+I was the Chief of the Army Staff of the Indian Army during the Indo-Pakistani War of 1971, 
+you can manage your groups using this bot
+choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 """.format(
             first_name=name,
@@ -216,14 +217,16 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""
-Hello {query.from_user.first_name}! My name is [Haguromo Otsusuki](https://telegra.ph/file/6b8d31e51f5d366431267.jpg)
-And I'm here to create peace in shinobi world as well as your groups.
-You can choose an option below, by clicking a button.
+Hello {query.from_user.first_name}! I am [Sam Manekshaw](https://telegra.ph/file/ef53480adecc59c459159.jpg)
+(Tribute to Field Marshal Sam Manekshaw ).
+You can use this bot to manage your groups 
+choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 
 General command are:
  - /start: Start the bot
  - /help: Give this message
+ - /vchelp: to see info about vc player
  """
     if mod_match:
         module = mod_match.group(1)
