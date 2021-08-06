@@ -65,7 +65,7 @@ $ pip3 install pyrogram TgCrypto
 $ python3 str_gen.py
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/thehamkercat/WilliamButcherBot/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/satyanandatripathi/wbb)
 
 
 # Docker
