@@ -115,8 +115,8 @@ async def help_command(_, message):
                         url=f"t.me/{BOT_USERNAME}?start=help",
                     ),
                     InlineKeyboardButton(
-                        text="Owner 🦚",
-                        url="http://t.me/mrstrange_genuine",
+                        text="Donate 🦚",
+                        url="https://ndf.gov.in/",
                     ),
                 ],
                 [
@@ -141,8 +141,8 @@ async def help_command(_, message):
                     text="Commands ❓", callback_data="bot_commands"
                 ),
                 InlineKeyboardButton(
-                    text="Owner 🦚",
-                    url="https://t.me/mrstrange_genuine",
+                    text="Donate 🦚",
+                    url="https://ndf.gov.in/",
                 ),
             ],
             [
